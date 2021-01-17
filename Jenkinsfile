@@ -16,10 +16,10 @@ pipeline {
             parallel {
                 stage('Test On Windows') {
                     agent {
-                        label "Windows_Node"
+                        label "linux_node"
                     }
                     steps {
-                        echo "Task1 on Agent"
+                        echo "Task1 on Linux"
                     }
                     
                 }
